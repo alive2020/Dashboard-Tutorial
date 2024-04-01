@@ -1,10 +1,10 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { SiShopware } from "react-icons/si";
+import { SiSinglestore } from "react-icons/si";
 import { MdOutlineCancel } from "react-icons/md";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
-import { links } from "../data/dummy";
+import { links } from "../data/constants";
 import { useStateContext } from "../contexts/ContextProvider";
 
 const Sidebar = () => {
@@ -32,7 +32,7 @@ const Sidebar = () => {
               onClick={handleCloseSideBar}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
-              <SiShopware /> <span>Shoppy</span>
+              <SiSinglestore /> <span>MyStore</span>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
